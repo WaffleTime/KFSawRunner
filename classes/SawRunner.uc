@@ -254,137 +254,138 @@ function float DifficultyDamageModifer()
         {
         	AdjustedDamageModifier = 0.3;
         }
-        
+
         // Do less damage if we're alone
         if( Level.Game.NumPlayers == 1 )
         {
         	AdjustedDamageModifier *= 0.75;
         }
-        
+
         return AdjustedDamageModifier;
     }
 }
 
 defaultproperties
 {
-     bMeleeStunImmune=True
-     damageForce=70000
-     bFatAss=True
-     KFRagdollName="Clot_Trip"
-     MeleeRange=65.0
-     AmbientSoundScaling=8.0
-     SoundVolume=200
-     AmbientGlow=0
-     Mass=600.000000
-     RotationRate=(Yaw=45000,Roll=0)
-
-     Health=3000
-     HealthMax=3000
-     PlayerCountHealthScale=0.10
-     PlayerNumHeadHealthScale=0.10
-     HeadHealth=1200
-     MeleeDamage=65
-     JumpZ=320.000000
-
-     CollisionRadius=26.000000
-     CollisionHeight=44
-     bCanDistanceAttackDoors=False
-     Intelligence=BRAINS_Mammal
-     bUseExtendedCollision=True
-     ColOffset=(Z=36)
-     ColRadius=36
-     ColHeight=33
-     ZombieFlag=3
-     BleedOutDuration=7.0
-     HeadHeight=2.5
-     HeadScale=1.5
-     OnlineHeadshotOffset=(X=20,Y=0,Z=56)
-     OnlineHeadshotScale=1.5
-     MotionDetectorThreat=1.0
-     ZapThreshold=1.5
-     bHarpoonToHeadStuns=true
-     bHarpoonToBodyStuns=false
-     ScoringValue=150
-     DamageToMonsterScale=5.0
-     bBoss=True
-
-     DetachedArmClass=Class'KFSawRunner.SawRunnerGibArm'
-     DetachedLegClass=Class'KFSawRunner.SawRunnerGibLeg'
-     DetachedHeadClass=Class'KFSawRunner.SawRunnerGibHead'
-
-     MoanVoice=SoundGroup'SawRunner_R.sawrunner_noises'
-     MeleeAttackHitSound=Sound'SawRunner_R.chainsaw_attack_hit'
-     JumpSound=SoundGroup'SawRunner_R.sawrunner_noises'
-     HitSound(0)=SoundGroup'SawRunner_R.sawrunner_pain'
-     DeathSound(0)=Sound'SawRunner_R.sawrunner_death'
-     ChallengeSound(0)=SoundGroup'SawRunner_R.sawrunner_noises'
-     ChallengeSound(1)=SoundGroup'SawRunner_R.sawrunner_noises'
-     ChallengeSound(2)=SoundGroup'SawRunner_R.sawrunner_noises'
-     ChallengeSound(3)=SoundGroup'SawRunner_R.sawrunner_noises'
-     AmbientSound=Sound'SawRunner_R.chainsaw_loop'
-
-     Mesh=SkeletalMesh'SawRunner_R.sawrunner'
-     Skins(0)=Texture'SawRunner_R.headlol'
-     Skins(1)=Texture'SawRunner_R.skoside_2'
-     Skins(2)=Texture'SawRunner_R.byxa_fram_2'
-     Skins(3)=Texture'SawRunner_R.byxa_bak_2'
-     Skins(4)=Texture'SawRunner_R.sko_under'
-     Skins(5)=Texture'SawRunner_R.hand'
-     Skins(6)=Texture'SawRunner_R.jacket_front'
-     Skins(7)=Texture'SawRunner_R.jacket_back'
-     Skins(8)=Texture'SawRunner_R.chainsawtex1'
-     Skins(9)=Texture'SawRunner_R.tex1'
-
-     HeadlessWalkAnims(0)="Walk1"
-     HeadlessWalkAnims(1)="Walk1"
-     HeadlessWalkAnims(2)="Walk1"
-     HeadlessWalkAnims(3)="Walk1"
-     BurningWalkFAnims(0)="Walk1"
-     BurningWalkFAnims(1)="Walk1"
-     BurningWalkFAnims(2)="Walk1"
-     BurningWalkAnims(0)="Walk1"
-     BurningWalkAnims(1)="Walk1"
-     BurningWalkAnims(2)="Walk1"
-     MeleeAnims(0)="Claw"
-     MeleeAnims(1)="Claw"
-     MeleeAnims(2)="Claw"
-     HitAnims(0)="HitF"
-     HitAnims(1)="HitF"
-     HitAnims(2)="HitF"
-     KFHitFront="HitF"
-     KFHitBack="HitF"
-     KFHitLeft="HitF"
-     KFHitRight="HitF"
-
-     MovementAnims(0)="Walk1"
-     WalkAnims(0)="Walk1"
-     WalkAnims(1)="Walk1"
-     WalkAnims(2)="Walk1"
-     WalkAnims(3)="Walk1"
-
-     PuntAnim="Claw"
-
-     IdleHeavyAnim="Idle"
-     IdleRifleAnim="Idle"
-     FireHeavyRapidAnim="Claw"
-     FireHeavyBurstAnim="Claw"
-     FireRifleRapidAnim="Claw"
-     FireRifleBurstAnim="Claw"
-
-     TurnLeftAnim="TurnLeft"
-     TurnRightAnim="TurnRight"
-     IdleCrouchAnim="Idle"
-     IdleWeaponAnim="Idle"
-     IdleRestAnim="Idle"
-
-     DrawScale=1.5
-     Prepivot=(Z=26.0)
-
-     bCannibal = false
-     MenuName="Sawrunner"
-
-     GroundSpeed=225.000000
-     WaterSpeed=225.000000
-
-     ControllerClass=Class'KFChar.SawZombieController'
+    bBitchMode=False
+    bMeleeStunImmune=True
+    damageForce=70000
+    bFatAss=True
+    KFRagdollName="Clot_Trip"
+    MeleeRange=65.0
+    AmbientSoundScaling=8.0
+    SoundVolume=200
+    AmbientGlow=0
+    Mass=600.000000
+    RotationRate=(Yaw=45000,Roll=0)
+    
+    Health=3000
+    HealthMax=3000
+    PlayerCountHealthScale=0.10
+    PlayerNumHeadHealthScale=0.10
+    HeadHealth=1200
+    MeleeDamage=65
+    JumpZ=320.000000
+    
+    CollisionRadius=26.000000
+    CollisionHeight=44
+    bCanDistanceAttackDoors=False
+    Intelligence=BRAINS_Mammal
+    bUseExtendedCollision=True
+    ColOffset=(Z=36)
+    ColRadius=36
+    ColHeight=33
+    ZombieFlag=3
+    BleedOutDuration=7.0
+    HeadHeight=2.5
+    HeadScale=1.5
+    OnlineHeadshotOffset=(X=20,Y=0,Z=56)
+    OnlineHeadshotScale=1.5
+    MotionDetectorThreat=1.0
+    ZapThreshold=1.5
+    bHarpoonToHeadStuns=true
+    bHarpoonToBodyStuns=false
+    ScoringValue=150
+    DamageToMonsterScale=5.0
+    bBoss=True
+    
+    DetachedArmClass=Class'KFSawRunner.SawRunnerGibArm'
+    DetachedLegClass=Class'KFSawRunner.SawRunnerGibLeg'
+    DetachedHeadClass=Class'KFSawRunner.SawRunnerGibHead'
+    
+    MoanVoice=SoundGroup'SawRunner_R.sawrunner_noises'
+    MeleeAttackHitSound=Sound'SawRunner_R.chainsaw_attack_hit'
+    JumpSound=SoundGroup'SawRunner_R.sawrunner_noises'
+    HitSound(0)=SoundGroup'SawRunner_R.sawrunner_pain'
+    DeathSound(0)=Sound'SawRunner_R.sawrunner_death'
+    ChallengeSound(0)=SoundGroup'SawRunner_R.sawrunner_noises'
+    ChallengeSound(1)=SoundGroup'SawRunner_R.sawrunner_noises'
+    ChallengeSound(2)=SoundGroup'SawRunner_R.sawrunner_noises'
+    ChallengeSound(3)=SoundGroup'SawRunner_R.sawrunner_noises'
+    AmbientSound=Sound'SawRunner_R.chainsaw_loop'
+    
+    Mesh=SkeletalMesh'SawRunner_R.sawrunner'
+    Skins(0)=Texture'SawRunner_R.headlol'
+    Skins(1)=Texture'SawRunner_R.skoside_2'
+    Skins(2)=Texture'SawRunner_R.byxa_fram_2'
+    Skins(3)=Texture'SawRunner_R.byxa_bak_2'
+    Skins(4)=Texture'SawRunner_R.sko_under'
+    Skins(5)=Texture'SawRunner_R.hand'
+    Skins(6)=Texture'SawRunner_R.jacket_front'
+    Skins(7)=Texture'SawRunner_R.jacket_back'
+    Skins(8)=Texture'SawRunner_R.chainsawtex1'
+    Skins(9)=Texture'SawRunner_R.tex1'
+    
+    HeadlessWalkAnims(0)="Walk1"
+    HeadlessWalkAnims(1)="Walk1"
+    HeadlessWalkAnims(2)="Walk1"
+    HeadlessWalkAnims(3)="Walk1"
+    BurningWalkFAnims(0)="Walk1"
+    BurningWalkFAnims(1)="Walk1"
+    BurningWalkFAnims(2)="Walk1"
+    BurningWalkAnims(0)="Walk1"
+    BurningWalkAnims(1)="Walk1"
+    BurningWalkAnims(2)="Walk1"
+    MeleeAnims(0)="Claw"
+    MeleeAnims(1)="Claw"
+    MeleeAnims(2)="Claw"
+    HitAnims(0)="HitF"
+    HitAnims(1)="HitF"
+    HitAnims(2)="HitF"
+    KFHitFront="HitF"
+    KFHitBack="HitF"
+    KFHitLeft="HitF"
+    KFHitRight="HitF"
+    
+    MovementAnims(0)="Walk1"
+    WalkAnims(0)="Walk1"
+    WalkAnims(1)="Walk1"
+    WalkAnims(2)="Walk1"
+    WalkAnims(3)="Walk1"
+    
+    PuntAnim="Claw"
+    
+    IdleHeavyAnim="Idle"
+    IdleRifleAnim="Idle"
+    FireHeavyRapidAnim="Claw"
+    FireHeavyBurstAnim="Claw"
+    FireRifleRapidAnim="Claw"
+    FireRifleBurstAnim="Claw"
+    
+    TurnLeftAnim="TurnLeft"
+    TurnRightAnim="TurnRight"
+    IdleCrouchAnim="Idle"
+    IdleWeaponAnim="Idle"
+    IdleRestAnim="Idle"
+    
+    DrawScale=1.5
+    Prepivot=(Z=26.0)
+    
+    bCannibal = false
+    MenuName="Sawrunner"
+    
+    GroundSpeed=225.000000
+    WaterSpeed=225.000000
+    
+    ControllerClass=Class'KFChar.SawZombieController'
 }
